@@ -2,5 +2,14 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import '@/assets/reset.css'
 
-createApp(App).use(store).use(router).mount('#app')
+import components from '@/components/CustomUI'
+
+const app = createApp(App)
+
+components.forEach(component => {
+    app.component(component.name, component)
+})
+
+app.use(store).use(router).mount('#app')
