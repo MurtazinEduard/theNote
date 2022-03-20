@@ -19,7 +19,7 @@
           {{ option.name }}
         </option>
       </select>
-      <div class="navigation-link">Резюме hh.ru</div>
+      <a target="_blank" href="https://hh.ru/resume/df7857dfff09c6ba010039ed1f47344f333776" class="navigation-link">Резюме hh.ru</a>
     </div>
   </div>
 </template>
